@@ -1,0 +1,44 @@
+/* đổi màu cột cuối cùng trong bảng */
+
+
+/* table tr td:last-child{
+    color: blue;
+} */
+
+
+/* đổi màu cột đầu tiên trong bảng */
+
+table tr td:first-child {
+    background-color: red;
+}
+
+
+/* đổi màu cột tuỳ chọn  */
+
+
+/* table tr td:nth-child(3 ){
+    color: yellow;
+} */
+
+
+/* hover */
+
+.input {
+    background-color: black;
+}
+
+.input:hover {
+    background-color: yellow;
+}
+
+
+/* Focus */
+
+.input:focus {
+    background-color: red;
+}
+
+a.test_hover {
+    background-color: red;
+    text-decoration: none;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+    <link rel="stylesheet" href="/html_css_day2/CSS/style.css">
+</head>
+
+<body>
+    <!-- Image:  "External -- Internal"  -->
+    <!--External link  --trỏ thư mục nằm ngoài -->
+    <!-- <img src="" alt="backgroud-image"> -->
+    <!-- Internal link -->
+    <!-- realtive path --mang tính tương đối-->
+    <!-- <img src="./Images/em.jpeg" width="400px" alt="backgroud-image"> -->
+    <!-- absolute path --bắt đầu từ nguồn-->
+    <!-- <img src="/html_css_day2/Images/em.jpeg" width="400px" alt="backgroud-image"> -->
+
+    <!-- Thẻ Link -->
+    <!-- <a href=""  >Self</a> 
+        <a href="" target="_blank">Blank</a><br> -->
+    <!-- Định danh thẻ ưu tiên -->
+    <!-- <a href="" id="mark">Linh</a>
+            <a href="#mark">Linh2</a> -->
+
+    <!-- List -->
+    <!-- unorder list -->
+    <ul style="list-style-type: disc">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contnet</li>
+
+    </ul>
+    <!-- order list -->
+    <ol type="A">
+        <li>Home
+            <ul>
+                <li>1</li>
+                <li>2</li>
+            </ul>
+        </li>
+        <li>About</li>
+        <li>Content</li>
+    </ol>
+    <!-- Table -->
+    <table>
+        <caption>CEO</caption>
+        <thead>
+            <tr>
+                <th colspan="3">Information</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Age </th>
+                <th>Add</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Linh</td>
+                <td>18</td>
+                <td rowspan="2">TB</td>
+            </tr>
+            <tr>
+                <td>Hung</td>
+                <td>18</td>
+                <!-- <td>TB</td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- layout -->
+    <!-- span, div (thẻ trống)-->
+    <span>content - inline</span>
+    <div>content- block</div>
+    <header>
+        Header
+    </header>
+    <section>
+        <nav>
+            nav
+        </nav>
+        <article>
+            <h3>a</h3>
+            <h3>b</h3>
+        </article>
+    </section>
+    <footer>
+        Footer
+    </footer>
+    <!-- Form -->
+
+    <form action="/server.js">
+
+
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username"><br>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password"><br>
+        <label>PhoneNumber</label>
+        <input type="number">
+        <button>Login</button><br> Chọn Tháng: <select id="month" name="month">
+            <optgroup label="Spring">
+                <option value="1">Tháng 1</option>
+                <option value="2">Tháng 2</option>
+                <option value="3">Tháng 3</option>
+            </optgroup>
+            <optgroup label="Summer">
+                <option value="4">Tháng 4</option>
+                <option value="5">Tháng 5</option>
+                <option value="6">Tháng 6</option>
+            </optgroup>
+        </select><br>
+
+
+        <!-- Chọn giới tính -->
+        <label>Male</label>
+        <input name="gender" type="radio">
+        <label>Female</label>
+        <input name="gender" type="radio"><br>
+
+
+
+        <!-- Checkbox -->
+        <label for="agree">Do you agree with our policy</label>
+        <input id="agree" type="checkbox">
+    </form>
+
+    <br><br><br>
+
+    <!-- Table first(last)-child -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age </th>
+            <th>Add </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Linh</td>
+            <td>22</td>
+            <td>TB</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Dung</td>
+            <td>22</td>
+            <td>TB</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Hùng</td>
+            <td>19</td>
+            <td>TB</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+
+    <!-- Hover and Focus -->
+    <input class="input" type="text">
+    <br>
+    <a class="test_hover" href="https://google.com ">Goto Google</a>
+
+
+
+
+</body>
+
+</html>
