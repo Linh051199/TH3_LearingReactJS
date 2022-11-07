@@ -129,6 +129,10 @@
 // }
 // ---------------------------------------------------------------------------------------------------------------------------------------
 // Function()
+// Cách khai báo Arrow function
+// let studentMark = (student)=> {}
+
+
 // function enterNumber(min, max) {
 //     let inputNumberStr = window.prompt('Enter a number herre!');
 //     let inputNumber = Number(inputNumberStr);
@@ -141,31 +145,17 @@
 // }
 // let number = enterNumber(5, 10);
 // console.log('number; ', number)
-
-
-
-function number() {
-    number1 = 10;
-    console.log(number1)
-
+// ---------------------------------------------------------------------------
+// Rest operator
+let total = (...Rest) => {
+    let result = 0;
+    let k = 5;
+    for (let i = 0; i < Rest.length; i++) {
+        if (Rest[i] > k) {
+            result += Rest[i]
+        }
+    }
+    return result;
 }
 
-number()
-
-
-
-// Array
-// let numbers = [1, 2, 3, 4, 5]
-//     // In phần tử của Array
-// console.log(numbers)
-//     // In phần tử thứ 3 của Array
-// console.log('Third number: ', numbers[2])
-//     // Kiểm tra phần tử có tồn tại trong Array
-// let x = 3;
-// for (let i = 0; i < numbers.length; i++) {
-//     if ([i] == x) {
-//         console.log('Số 3 có tồn tại trong mảng');
-//         break;
-//     }
-//     console.log(i)
-// }
+console.log('Total :', total(1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'a'))
