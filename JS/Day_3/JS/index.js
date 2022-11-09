@@ -45,19 +45,45 @@
 // Boss2.eat();
 // -------------------------------------------------------------------------------------------------------------------------------------------
 // Handle with data string object
+// let student = {
+//     name: "LinhPham",
+//     age: 20,
+// }
+// console.log(student, typeof(student))
+// let dataStudentStr = JSON.stringify(student) //Chuyển object sang dạng String
+// console.log(dataStudentStr)
+// let studentCopy = JSON.parse(dataStudentStr) // Chuyển string sang object
+// console.log(studentCopy)
+// let student2 = student;
+// student2.name = "HungPham"
+// console.log(student2)
+// console.log(student)
 
-let student = {
-    name: "LinhPham",
-    age: 20,
-}
+// Copy 1 Object by JSON : deep copy
+// let student = {
+//     name: "Linh",
+//     age: 23,
+// }
+// console.log(student)
+// let studentCp = JSON.parse(JSON.stringify(student))
+// studentCp.name = "Hung"
+// console.log(studentCp)
 
-console.log(student, typeof(student))
-let dataStudentStr = JSON.stringify(student) //Chuyển object sang dạng String
-console.log(dataStudentStr)
-let studentCopy = JSON.parse(dataStudentStr) // Chuyển string sang object
-console.log(studentCopy)
+// Copy 1 Object by Spread operator: shadow copy
+// let student = {
+//     name: "LinhPham",
+//     age: 20,
+// }
+// let studentCp2 = {
+//     ...student
+// }
+// studentCp2.name = 'Hung'
+// console.log(studentCp2)
 
-let student2 = student;
-student2.name = "HungPham"
-console.log(student2)
-console.log(student)
+// Object destructering 
+// let student = {
+//     name: "LinhPham",
+//     age: 20,
+// }
+// let { name, age } = student;
+// console.log(name, age)

@@ -1,0 +1,47 @@
+.bg-gray {
+    background-color: gray;
+}
+
+.css-stopWatch {
+    position: relative;
+    width: 92%;
+    background: #ffffff;
+    left: 4%;
+    padding: 40px 0;
+    font-family: 'Roboto mono', monospace;
+    color: #0381bb;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+}
+
+.css-btn-stopWatch {
+    width: 90%;
+    margin: 60px auto o auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.css-btn-stopWatch button {
+    width: 120px;
+    height: 40px;
+    background-color: #205e94;
+    color: #ffffff;
+    border: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.css-btn-stopWatch button:nth-last-child(2) {
+    background-color: #d23332;
+}
+
+.css-btn-stopWatch button:nth-last-child(1) {
+    background-color: #20b380;
+}
