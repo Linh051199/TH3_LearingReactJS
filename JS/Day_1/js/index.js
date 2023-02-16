@@ -40,3 +40,5 @@ if (isRaining && haveCar) {
 } else {
     console.log('Linh nghi hoc')
 }
+
+// test
