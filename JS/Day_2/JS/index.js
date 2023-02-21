@@ -18,7 +18,6 @@
 //     console.log('Month is wrong!')
 // }
 // ---------------------------------------------------------------------------
-// Loops: for, while, do while, break
 // Switch-case
 // switch (month) {
 //     case 1:
@@ -129,8 +128,16 @@
 // }
 // ---------------------------------------------------------------------------------------------------------------------------------------
 // Function()
-// Cách khai báo Arrow function
-// let studentMark = (student)=> {}
+// Regular Function
+// function studentMark1() {
+
+// }
+// Expression Function
+// let studentMark2= function(student){
+
+// }
+// Arrow function
+// let studentMark3 = (student)=> {}    
 
 
 // function enterNumber(min, max) {
@@ -147,15 +154,17 @@
 // console.log('number; ', number)
 // ---------------------------------------------------------------------------
 // Rest operator
+
 let total = (...Rest) => {
     let result = 0;
-    let k = 5;
+    let k = 0;
     for (let i = 0; i < Rest.length; i++) {
         if (Rest[i] > k) {
+            // debugger
             result += Rest[i]
         }
     }
     return result;
 }
 
-console.log('Total :', total(1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'a'))
+console.log('Total :', total(1, 2, 3, 4, 5, 'b', 6, 7, 8, 9, 10))

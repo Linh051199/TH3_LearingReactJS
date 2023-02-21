@@ -16,11 +16,11 @@
 // }
 // Boss.sleep();
 
-// for (let prop in Boss) { //Print all prop and method
-//     if (typeof(Boss[prop]) != 'function') {
-//         console.log('prop: ', prop, Boss[prop])
+// for (let data in Boss) { //Print all prop and method
+//     if (typeof(Boss[data]) != 'function') {
+//         console.log('prop: ', data, Boss[data])
 //     } else {
-//         console.log('method: ', prop)
+//         console.log('method: ', data)
 //     }
 // }
 
@@ -41,7 +41,7 @@
 // }
 
 // Boss1.eat();
-// Boss2.eat = Boss1.eat.bind(Boss1);
+// Boss2.eat = Boss1.eat.bind(Boss2     );
 // Boss2.eat();
 // -------------------------------------------------------------------------------------------------------------------------------------------
 // Handle with data string object
@@ -58,6 +58,7 @@
 // student2.name = "HungPham"
 // console.log(student2)
 // console.log(student)
+// -------------------------------------------------------------------------------------------------------------------------------------------
 
 // Copy 1 Object by JSON : deep copy
 // let student = {
@@ -68,6 +69,7 @@
 // let studentCp = JSON.parse(JSON.stringify(student))
 // studentCp.name = "Hung"
 // console.log(studentCp)
+// -------------------------------------------------------------------
 
 // Copy 1 Object by Spread operator: shadow copy
 // let student = {
@@ -79,6 +81,7 @@
 // }
 // studentCp2.name = 'Hung'
 // console.log(studentCp2)
+// -------------------------------------------------------------------
 
 // Object destructering 
 // let student = {

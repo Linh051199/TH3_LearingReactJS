@@ -1,55 +1,47 @@
-// // DOM 
-// // // get - dertermine element want to edit
-// // let h3_1 = document.getElementById('js-title1')
-// // let h3_2 = document.getElementById('js-title2')
-// let containerElem = document.getElementById('js-container')
+// DOM 
+// // get - dertermine element want to edit
+let containerElem = document.getElementById('js-container')
 
-// let h3_1 = document.querySelector(".js-title1")
-// let h3_2 = document.querySelector("#js-title2")
-// let h3_3 = document.getElementsByClassName("js-title3")[0]
-//     // let h3_4 = document.querySelectorAll("h3.js-title3")
+let h3_1 = document.querySelector(".js-title1")
+let h3_2 = document.querySelector("#js-title2")
+let h3_3 = document.getElementsByClassName("js-title3")[0]
 
-// // console.log(h3_3)
-// //Updating - handle logic
-// let color = 'red';
-// //Updating- render
-// // -case-> lower camel case
-// // rare
-// h3_1.style.color = 'red';
-// h3_1.style.borderTop = '1px solid yellow';
+//Updating - handle logic
+let color = 'red';
 
-// // Ocasionally
-// h3_1.classList.add("bg-gray")
 
-// h3_2.className = "bg-gray"
+//Updating- render
+// -case-> lower camel case
+// rare
+h3_1.style.color = 'red';
+h3_1.style.borderTop = '3px solid blue';
 
-// h3_3.className = "bg-gray"
+// Ocasionally
+h3_1.classList.add("bg-gray")
 
-// // h3_4.className = "bg-gray"
+h3_2.className = "bg-gray"
+
 // // add a element
-// let pElem = document.createElement("p")
-// pElem.innerText = 'Description'
+let pElem = document.createElement("p")
+pElem.innerText = 'Description'
 
-// containerElem.appendChild(pElem)
+containerElem.appendChild(pElem)
 
-// setTimeout(() => {
-//     containerElem.removeChild(pElem)
-//     h3_1.classList.remove("bg-gray")
-// }, 1000);
+setTimeout(() => {
+    containerElem.removeChild(pElem)
+    h3_1.classList.remove("bg-gray")
+}, 2000);
 
 
-// // Event handler
-// let btnClick = document.querySelector(".js-btn-click")
+// Event handler
+let btnClick = document.querySelector(".js-btn-click")
 
-// btnClick.addEventListener("click", userClick)
-//     // btnClick.onclick = userClick
+btnClick.addEventListener("click", (userClick) => {
+    alert('click')
+})
 
-// function userClick() {
-//     alert("click")
-// }
 
 // current time 
-
 let clockElem = document.querySelector(".js-clock")
 let timerElem = clockElem.querySelector(".js-clock-timer")
 
@@ -57,10 +49,10 @@ let timerInterval = setInterval(() => {
     timerElem.innerText = new Date().toLocaleTimeString()
 }, 1000)
 
-// 10s stop the clock
-setTimeout(() => {
-    clearInterval(timerInterval)
-}, 10000)
+// // 10s stop the clock
+// setTimeout(() => {
+//     clearInterval(timerInterval)
+// }, 10000)
 
 // StopWatch
 window.onload = function() {
@@ -129,9 +121,9 @@ console.log('isInteger: ', Number.isInteger(myNumber))
 console.log('isInteger: ', Number.isInteger(Number.parseInt(myNumber)))
 console.log('Convert Number to String: ', myNumber + '');
 
-// Random
+// // Random
 function getRandom(min, max) {
     return Math.floor((Math.random() * (max - min) + min));
 }
 
-console.log('Random: ', getRandom(5, 10))
+console.log('Random: ', getRandom(5, 35))
