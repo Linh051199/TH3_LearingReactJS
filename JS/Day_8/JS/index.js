@@ -1,5 +1,9 @@
 // Callback
 // Promise
+// async/ await
+
+// Promise
+
 // let successByIphone = true;
 // let successFindLove = true;
 
@@ -155,4 +159,3 @@
 
 // doAllJob(promisesFunc)
 // ------------------------------------------------------------------------------------------------
-// AJAX
