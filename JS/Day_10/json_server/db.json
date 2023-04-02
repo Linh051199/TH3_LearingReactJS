@@ -1,0 +1,34 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "img": "./Image/BanhDa.jpeg",
+      "name": "Bánh đa",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "img": "./Image/Mien.jpeg",
+      "name": "Miến",
+      "price": 200
+    },
+    {
+      "name": "Lạc",
+      "img": "./Image/Lac.jpeg",
+      "price": 300,
+      "id": 3
+    },
+    {
+      "img": "./Image/DoDen.webp",
+      "name": "Đỗ đen",
+      "price": 400,
+      "id": 4
+    },
+    {
+      "name": "Vừng",
+      "img": "./Image/Vung.jpeg",
+      "price": "500",
+      "id": 5
+    }
+  ]
+}

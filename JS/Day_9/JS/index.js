@@ -4,6 +4,8 @@
 // Closure 
 // Module 
 // Generator functions
+// yield
+
 
 // ----------------------------------------------------------------------------------------------
 // var || let || const
@@ -63,25 +65,25 @@
 
 // ----------------------------------------------------------------------------------------------
 // Generator functions
-const numbers = [1, 2, 3, 5, 6, 4, 7]
+// const numbers = [1, 2, 3, 5, 6, 4, 7]
 
-function makeIterator(array) {
-    let nextIndex = 0;
-    return {
-        next: function() {
-            return nextIndex < array.length ? { value: array[nextIndex++], done: false } : { done: true }
-        }
-    }
-}
+// function makeIterator(array) {
+//     let nextIndex = 0;
+//     return {
+//         next: function() {
+//             return nextIndex < array.length ? { value: array[nextIndex++], done: false } : { done: true }
+//         }
+//     }
+// }
 
-const iterator = makeIterator(numbers)
+// const iterator = makeIterator(numbers)
 
 
-while (true) {
-    let next = iterator.next();
-    if (next.done) break;
-    console.log(next.value)
-}
+// while (true) {
+//     let next = iterator.next();
+//     if (next.done) break;
+//     console.log(next.value)
+// }
 
 // const myArray = {
 //     // list: [1, 2, 3, 4],
