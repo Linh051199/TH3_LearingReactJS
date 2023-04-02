@@ -1,0 +1,45 @@
+.login-container {
+  width: 400px;
+  padding-bottom: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+
+  .lable {
+    display: inline-flex;
+    width: 80px;
+    font-weight: 600;
+  }
+  .userName,
+  .password,
+  .email {
+    width: 300px;
+    height: 40px;
+  }
+
+  .input-userName,
+  .input-password,
+  .input-email {
+    outline: none;
+    width: 210px;
+    height: 50%;
+    // border: 1px solid;
+  }
+
+  .btn-submit {
+    height: 28px;
+    width: 100px;
+    font-weight: 600;
+  }
+}
+
+.error-message {
+  display: flex;
+  margin-left: 80px;
+  font-size: 0.8rem;
+  color: #ca5151;
+}
+.error {
+  border: 1px solid #ca5151;
+  border-radius: 2px;
+}
