@@ -2,8 +2,9 @@ const routes = {
   home: "/",
   login: "/login",
   dashboard: "/dashboard",
-  clock: "/clock",
-  couter: "/couter",
+  createStudent: "/createStudent",
+  listStudent: "/listStudent",
+  page404: "/page404",
 };
 
 export default routes;

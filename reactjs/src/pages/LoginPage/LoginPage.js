@@ -1,16 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import validator from "validator";
+import classNames from "classnames/bind";
+import { Link } from "react-router-dom";
 
 import styles from "./LoginPage.module.scss";
-import classNames from "classnames/bind";
-import routerConfig from "../config/routes";
+import routerConfig from "../../config/routes";
 
 const cx = classNames.bind(styles);
 function LoginPage() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
+
   const [errorUserName, setErrorUserName] = useState("");
   const [errorPassword, setErrorPassword] = useState("");
   const [errorEmail, setErrorEmail] = useState("");
@@ -34,7 +36,7 @@ function LoginPage() {
     } else {
       setErrorUserName("");
       setErrorPassword("");
-      navigate(routerConfig.dashboard);
+      navigate(routerConfig.home);
     }
   };
 
@@ -100,6 +102,9 @@ function LoginPage() {
       <button className={cx("btn-submit")} onClick={handleSubmit}>
         Login
       </button>
+      <Link className={cx("btn-goHomePage")} to={routerConfig.home}>
+        Go HomePage
+      </Link>
     </div>
   );
 }

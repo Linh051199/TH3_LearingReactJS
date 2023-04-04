@@ -1,15 +1,18 @@
+// import {  } from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 
 import routesConfig from "../../config/routes";
-import styles from "./DashBoardPage.module.scss";
+import styles from "./Clock.module.scss";
+import ShowTimer from "./ShowTimer";
 
 const cx = classNames.bind(styles);
 
-function DashboardPage() {
+function ClockPage() {
   return (
     <div>
-      <h2>DashboardPage</h2>
+      <h2>ClockPage</h2>
+      <ShowTimer />
       <Link className={cx("btn-goHomePage")} to={routesConfig.home}>
         Go HomePage
       </Link>
@@ -17,4 +20,4 @@ function DashboardPage() {
   );
 }
 
-export default DashboardPage;
+export default ClockPage;

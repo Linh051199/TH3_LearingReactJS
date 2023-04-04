@@ -5,10 +5,24 @@ function Home() {
   return (
     <ul>
       <li>
-        <Link to={routesConfig.login}>login</Link>
+        <Link style={{ fontSize: "2rem" }} to={routesConfig.login}>
+          Login
+        </Link>
       </li>
       <li>
-        <Link to={routesConfig.dashboard}>Dashboard</Link>
+        <Link style={{ fontSize: "2rem" }} to={routesConfig.dashboard}>
+          Dashboard
+        </Link>
+      </li>
+      <li>
+        <Link style={{ fontSize: "2rem" }} to={routesConfig.clock}>
+          Clock
+        </Link>
+      </li>
+      <li>
+        <Link style={{ fontSize: "2rem" }} to={routesConfig.couter}>
+          Couter
+        </Link>
       </li>
     </ul>
   );
