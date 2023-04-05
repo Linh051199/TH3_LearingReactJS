@@ -5,10 +5,6 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import routesConfig from "../../../config/routes";
 
-// const handleSubmit = () => {
-//   useNavigate(routesConfig.login);
-// };
-
 function Login() {
   const navigate = useNavigate();
   const OnFinish = (values) => {

@@ -9,7 +9,7 @@ import "antd/dist/reset.css";
 
 import "./App.css";
 import { publicRoutes } from "./routes";
-import DefaultLayout from "./layouts/DefaultLayout/DefaultLayout";
+import DefaultLayout from "../src/views/DefaultLayout/DefaultLayout";
 import routesConfig from "./config/routes";
 
 function App() {

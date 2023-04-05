@@ -1,6 +1,5 @@
 import {
   UserOutlined,
-  LoginOutlined,
   DashboardOutlined,
   OrderedListOutlined,
   UserAddOutlined,
@@ -24,13 +23,6 @@ function getItem(label, key, icon, children) {
 }
 
 const items = [
-  getItem(
-    <Link className="link-routes" to={routesConfig.login}>
-      Login
-    </Link>,
-    "1",
-    <LoginOutlined />
-  ),
   getItem(
     <Link className="link-routes" to={routesConfig.dashboard}>
       Dashboard
